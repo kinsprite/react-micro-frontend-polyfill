@@ -1,0 +1,23 @@
+/* eslint-disable */
+"use strict";
+
+(function(callback) {
+  var data = {
+    apps: [
+      {
+        id: 'app-example',
+        dependencies: [],
+        entries: [
+          '/rmf-app-example/658c5f91/app-example-a200b003.css',
+          '/rmf-app-example/658c5f91/app-example-b889c22.js'
+        ],
+        renders: [{renderId: 'root', routePath: '/app-example', componentKey: 'default'}],
+      },
+    ],
+    extra: {
+      defaultRoute: '/home',
+    }
+  };
+
+  if (callback) callback(data);
+})(rmfMetadataCallback);
