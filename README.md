@@ -3,12 +3,20 @@
 
 React polyfill for modern browsers and IE9/IE11.
 
-## Features
+This is a special Micro Frontend, you should include one of `entrypoints` in HTML file only, NOT all of them.
 
-* Register `Micro Frontend` apps on start up or later.
-* Load `Micro Frontend` apps dynamically.
-* Share common libraries for all `Micro Frontend` apps.
-* A global redux store can be used for states which cross multi `Micro Frontend` apps.
+Entrypoints in `rmf-manifest.json`:
+
+```json
+{
+  "entrypoints": [
+    "/rmf-polyfill/89381594/polyfill.f5d9d209.js",
+    "/rmf-polyfill/89381594/polyfill-ie9.1f7e138c.js",
+    "/rmf-polyfill/89381594/polyfill-ie11.3a1d4b4b.js"
+  ]
+}
+```
 
 ## Example
-See: https://micro.qinzhiqiang.cn
+
+Site: https://micro.qinzhiqiang.cn
